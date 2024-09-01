@@ -1301,6 +1301,9 @@ section,
   border: none;
   border-radius: 5px;
   cursor: pointer;
+  width: auto; /* Adjust width to the content of the button */
+  display: flex;
+  justify-content: center; /* Center horizontally */
 }
 
 .col-lg-7 button:hover {

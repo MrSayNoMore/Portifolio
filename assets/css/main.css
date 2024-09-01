@@ -41,10 +41,7 @@
 }
 
 
-/*--------------------------------------------------------------
-# Font & Color Variables
-# Help: https://bootstrapmade.com/color-system/
---------------------------------------------------------------*/
+
 /* Fonts */
 
 /* Smooth scroll */
@@ -354,8 +351,26 @@
     font-size: 32px;
   }
 
+
   .hero p {
     font-size: 20px;
+  }
+}
+
+
+/* Responsive adjustments for larger screens */
+@media (min-width: 1360px) {
+  .hero h2 {
+    font-size: 60px; /* Adjust the font size for larger screens */
+  }
+
+  .hero p {
+    font-size: 24px; /* Adjust the font size for larger screens */
+  }
+
+  .hero .social-links a {
+    font-size: 20px; /* Adjust the font size for larger screens */
+    margin-right: 15px; /* Adjust the margin for larger screens */
   }
 }
 
@@ -389,21 +404,33 @@
   line-height: 0;
 }
 
-.col-lg-4 {
-  width: 380px; /* Adjust width as needed */
-  height: 380px; /* Adjust height as needed */
-  overflow: hidden; /* Hide any overflow of the image */
-  position: relative; /* Ensure positioning context for child elements */
+
+.about .content h2 {
+  font-weight: 700;
+  font-size: 24px;
 }
 
-.col-lg-4 img {
-  width: auto; /* Allow the image to adjust its width */
-  height: auto; /* Allow the image to adjust its height */
-  max-width: 100%; /* Ensure the image fits within the container */
-  max-height: 100%; /* Ensure the image fits within the container */
-  object-fit: contain; /* Ensure the image fits inside the container without cropping */
+.about .content ul {
+  list-style: none;
+  padding: 0;
 }
 
+.about .content ul li {
+  margin-bottom: 20px;
+  display: flex;
+  align-items: center;
+}
+
+.about .content ul strong {
+  margin-right: 10px;
+}
+
+.about .content ul i {
+  font-size: 16px;
+  margin-right: 5px;
+  color: var(--accent-color);
+  line-height: 0;
+}
 /*--------------------------------------------------------------
 # Stats Section
 --------------------------------------------------------------*/
@@ -454,7 +481,7 @@
   text-transform: uppercase;
   display: block;
   font-weight: 600;
-  font-family:cursive;
+  font-family:Arial, Helvetica, sans-serif;
 }
 
 .skills .progress .skill .val {
@@ -945,59 +972,6 @@ h6 {
   font-family: var(--heading-font);
 }
 
-/* PHP Email Form Messages
-------------------------------*/
-.php-email-form .error-message {
-  display: none;
-  background: #df1529;
-  color: #ffffff;
-  text-align: left;
-  padding: 15px;
-  margin-bottom: 24px;
-  font-weight: 600;
-}
-
-.php-email-form .sent-message {
-  display: none;
-  color: #ffffff;
-  background: #059652;
-  text-align: center;
-  padding: 15px;
-  margin-bottom: 24px;
-  font-weight: 600;
-}
-
-.php-email-form .loading {
-  display: none;
-  background: var(--surface-color);
-  text-align: center;
-  padding: 15px;
-  margin-bottom: 24px;
-}
-
-.php-email-form .loading:before {
-  content: "";
-  display: inline-block;
-  border-radius: 50%;
-  width: 24px;
-  height: 24px;
-  margin: 0 10px -6px 0;
-  border: 3px solid var(--accent-color);
-  border-top-color: var(--surface-color);
-  animation: php-email-form-loading 1s linear infinite;
-}
-
-@keyframes php-email-form-loading {
-  0% {
-    transform: rotate(0deg);
-  }
-
-  100% {
-    transform: rotate(360deg);
-  }
-}
-
-
 /*--------------------------------------------------------------
 # Global Footer
 --------------------------------------------------------------*/
@@ -1147,9 +1121,6 @@ section,
   overflow: clip;
 }
 
-/*--------------------------------------------------------------
-# Global Section Titles
---------------------------------------------------------------*/
 .section-title {
   padding-bottom: 60px;
   position: relative;
@@ -1184,8 +1155,8 @@ section,
 # Contact Section
 --------------------------------------------------------------*/
 .contact .info-wrap {
-  background-color: var(--accent-color);
-  color:var(--default-color);
+  background-color: #0FFCBE;
+  color: var(--default-color);
   box-shadow: 0px 0px 20px rgb(0, 0, 0);
   padding: 30px;
 }
@@ -1203,7 +1174,7 @@ section,
 .contact .info-item i {
   font-size: 20px;
   color: var(--text-color);
-  background:  var(--background-color);
+  background: var(--background-color);
   width: 44px;
   height: 44px;
   display: flex;
@@ -1215,7 +1186,7 @@ section,
 }
 
 .contact .info-item h3 {
-  color:var(--background-color);
+  color: var(--background-color);
   padding: 0;
   font-size: 18px;
   font-weight: 700;
@@ -1234,7 +1205,7 @@ section,
 }
 
 .contact .php-email-form {
-  background-color: var(--accent-color);
+  background-color: #0FFCBE;
   color: var(--background-color);
   height: 100%;
   padding: 30px;
@@ -1262,7 +1233,7 @@ section,
 .contact .php-email-form input[type=email]:focus,
 .contact .php-email-form textarea:focus {
   border-color: var(--accent-color);
-  color:var(--background-color);
+  color: var(--background-color);
 }
 
 .contact .php-email-form input[type=text]::placeholder,
@@ -1283,7 +1254,103 @@ section,
 
 .contact .php-email-form button[type=submit]:hover {
   background: var(--default-color);
-  color:var(--accent-color);
+  color: var(--accent-color);
+}
+
+
+.col-lg-4 {
+  width: 380px; /* Adjust width as needed */
+  height: 380px; /* Adjust height as needed */
+  overflow: hidden; /* Hide any overflow of the image */
+  position: relative; /* Ensure positioning context for child elements */
+}
+
+.col-lg-4 img {
+  width: auto; /* Allow the image to adjust its width */
+  height: auto; /* Allow the image to adjust its height */
+  max-width: 100%; /* Ensure the image fits within the container */
+  max-height: 100%; /* Ensure the image fits within the container */
+  object-fit: contain; /* Ensure the image fits inside the container without cropping */
+}
+
+.col-lg-7 form {
+  background-color: #0FFCBE;
+  padding: 30px;
+  box-shadow: 0 0 20px rgb(0, 0, 0);
+}
+
+.col-lg-7 label {
+  font-weight: bold;
+  color:var(--background-color)
+}
+
+.col-lg-7 input[type="text"],
+.col-lg-7 input[type="email"],
+.col-lg-7 textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ffffff;
+  border-radius: 1px;
+}
+
+.col-lg-7 button {
+  background-color: #000;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.col-lg-7 button:hover {
+  background-color: var(--default-color);
+  color:#0FFCBE
+}
+
+/* Media query for medium-sized screens */
+@media (max-width: 992px) {
+  .col-lg-7 form {
+    padding: 20px;
+  }
+}
+
+/* Media query for small-sized screens */
+@media (max-width: 768px) {
+  .col-lg-7 form {
+    padding: 15px;
+  }
+
+  .col-lg-7 input[type="text"],
+  .col-lg-7 input[type="email"],
+  .col-lg-7 textarea {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+  }
+
+  .col-lg-7 button {
+    padding: 8px 15px;
+  }
+}
+
+/* Media query for extra small-sized screens */
+@media (max-width: 576px) {
+  .col-lg-7 form {
+    padding: 10px;
+  }
+
+  .col-lg-7 input[type="text"],
+  .col-lg-7 input[type="email"],
+  .col-lg-7 textarea {
+    width: 100%;
+    padding: 6px;
+    margin-bottom: 8px;
+  }
+
+  .col-lg-7 button {
+    padding: 6px 12px;
+  }
 }
 
 /*--------------------------------------------------------------

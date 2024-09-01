@@ -1247,7 +1247,6 @@ section,
   color: var(--default-color);
   background: var(--background-color);
   border: 0;
-  width: 50px;
   padding: 10px 30px;
   transition: 0.4s;
   border-radius: 50px;

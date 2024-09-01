@@ -1247,7 +1247,6 @@ section,
   color: var(--default-color);
   background: var(--background-color);
   border: 0;
-  width:100px;
   padding: 10px 30px;
   transition: 0.4s;
   border-radius: 50px;
@@ -1298,7 +1297,6 @@ section,
 .col-lg-7 button {
   background-color: #000;
   color: #fff;
-  width: 100px;
   padding: 10px 20px;
   border: none;
   border-radius: 5px;

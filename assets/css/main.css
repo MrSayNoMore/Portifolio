@@ -1161,12 +1161,6 @@ section,
   padding: 30px;
 }
 
-@media (max-width: 575px) {
-  .contact .info-wrap {
-    padding: 20px;
-  }
-}
-
 .contact .info-item {
   margin-bottom: 40px;
 }
@@ -1204,75 +1198,6 @@ section,
   color: var(--accent-color);
 }
 
-.contact .php-email-form {
-  background-color: #0FFCBE;
-  color: var(--background-color);
-  height: 100%;
-  padding: 30px;
-  box-shadow: 0px 0px 20px rgb(0, 0, 0);
-}
-
-@media (max-width: 575px) {
-  .contact .php-email-form {
-    padding: 20px;
-  }
-}
-
-.contact .php-email-form input[type=text],
-.contact .php-email-form input[type=email],
-.contact .php-email-form textarea {
-  font-size: 14px;
-  padding: 10px 15px;
-  box-shadow: none;
-  border-radius: 5px;
-  color: var(--background-color);
-  background-color: var(--text-color);
-}
-
-.contact .php-email-form input[type=text]:focus,
-.contact .php-email-form input[type=email]:focus,
-.contact .php-email-form textarea:focus {
-  border-color: var(--accent-color);
-  color: var(--background-color);
-}
-
-.contact .php-email-form input[type=text]::placeholder,
-.contact .php-email-form input[type=email]::placeholder,
-.contact .php-email-form textarea::placeholder {
-  color: var(--default-color);
-  background-color: #000000;
-}
-
-.contact .php-email-form button[type=submit] {
-  color: var(--default-color);
-  background: var(--background-color);
-  border: 0;
-  padding: 10px 30px;
-  transition: 0.4s;
-  border-radius: 50px;
-}
-
-.contact .php-email-form button[type=submit]:hover {
-  background: var(--default-color);
-  color: var(--accent-color);
-}
-
-
-.col-lg-4 {
-  width: 380px; /* Adjust width as needed */
-  height: 380px; /* Adjust height as needed */
-  overflow: hidden; /* Hide any overflow of the image */
-  position: relative; /* Ensure positioning context for child elements */
-}
-
-.col-lg-4 img {
-  width: auto; /* Allow the image to adjust its width */
-  height: auto; /* Allow the image to adjust its height */
-  max-width: 100%; /* Ensure the image fits within the container */
-  max-height: 100%; /* Ensure the image fits within the container */
-  object-fit: contain; /* Ensure the image fits inside the container without cropping */
-}
-
 .col-lg-7 form {
   background-color: #0FFCBE;
   padding: 30px;
@@ -1281,7 +1206,7 @@ section,
 
 .col-lg-7 label {
   font-weight: bold;
-  color:var(--background-color)
+  color: var(--background-color);
 }
 
 .col-lg-7 input[type="text"],
@@ -1301,24 +1226,22 @@ section,
   border: none;
   border-radius: 5px;
   cursor: pointer;
-  width: 80px; /* Adjust width to the content of the button */
-  display: flex;
-  justify-content: center; /* Center horizontally */
+  width: 150px;
+  display: block;
+  margin: 0 auto; /* Add this line to center the button */
 }
 
 .col-lg-7 button:hover {
   background-color: var(--default-color);
-  color:#0FFCBE
+  color: #0FFCBE;
 }
 
-/* Media query for medium-sized screens */
 @media (max-width: 992px) {
   .col-lg-7 form {
     padding: 20px;
   }
 }
 
-/* Media query for small-sized screens */
 @media (max-width: 768px) {
   .col-lg-7 form {
     padding: 15px;
@@ -1337,7 +1260,6 @@ section,
   }
 }
 
-/* Media query for extra small-sized screens */
 @media (max-width: 576px) {
   .col-lg-7 form {
     padding: 10px;

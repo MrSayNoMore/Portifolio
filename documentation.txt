@@ -1,6 +1,0 @@
-About
-
-I'm Sbusiso Ndlovu, an aspiring Web Developer from Johannesburg, South Africa. I'm passionate about turning complex ideas into simple, beautiful, and intuitive digital experiences. I'm currently a final-year BCom Information Systems student at the University of Johannesburg, where I've honed my skills in SQL, Python, C#, and web development through academic studies and personal projects. I'm constantly seeking new challenges and opportunities to expand my expertise.
-
-My goal is to build websites that are not only functional and user-friendly but also visually captivating. I strive to create websites that are easy to navigate and use, while reflecting your brand's unique identity and personality. My aim is to bring your message to life in a creative and effective way, ensuring your website is both eye-catching and easy to use. I'm excited to apply my skills and knowledge to help you achieve your online goals.
-

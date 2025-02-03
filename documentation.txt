@@ -1,0 +1,184 @@
+About
+
+I'm Sbusiso Ndlovu, an aspiring Web Developer from Johannesburg, South Africa. I'm passionate about turning complex ideas into simple, beautiful, and intuitive digital experiences. I'm currently a final-year BCom Information Systems student at the University of Johannesburg, where I've honed my skills in SQL, Python, C#, and web development through academic studies and personal projects. I'm constantly seeking new challenges and opportunities to expand my expertise.
+
+My goal is to build websites that are not only functional and user-friendly but also visually captivating. I strive to create websites that are easy to navigate and use, while reflecting your brand's unique identity and personality. My aim is to bring your message to life in a creative and effective way, ensuring your website is both eye-catching and easy to use. I'm excited to apply my skills and knowledge to help you achieve your online goals.
+
+/* General Section Title */
+.section-title {
+  text-align: center;
+  margin-bottom: var(--spacing-large);
+  color: var(--accent-color);
+}
+
+.section-title h2 {
+  font-family: 'Orbitron', sans-serif; /* Futuristic font */
+  font-size: 48px; /* Large font size for impact */
+  font-weight: var(--font-weight-bold);
+  text-transform: uppercase;
+  letter-spacing: 5px;
+  color: var(--accent-color);
+  text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5); /* Subtle glow effect */
+  margin-bottom: var(--spacing-small);
+  opacity: 0;
+  transform: translateY(20px);
+  animation: fadeInTitle 0.8s ease-in-out forwards;
+}
+
+.section-title p {
+  color: var(--border-color);
+  opacity: 0;
+  transform: translateY(20px);
+  animation: fadeInText 0.8s ease-in-out 0.3s forwards;
+}
+
+/* Keyframes for Animations */
+@keyframes fadeInTitle {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeInText {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+
+.section-title h2::before,
+.section-title h2::after {
+  content: '';
+  position: absolute;
+  width: 50px; /* Adjust line width */
+  height: 4px;
+  background: var(--accent-color);
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.section-title h2::before {
+  left: 0;
+  right: 100%;
+  margin-right: auto;
+}
+
+.section-title h2::after {
+  left: 100%;
+  right: 0;
+  margin-left: auto;
+}
+
+
+
+/* General Section Title */
+#testimonials .section-title {
+  text-align: center;
+  margin-bottom: var(--spacing-large);
+  color: var(--accent-color);
+}
+
+#testimonials .section-title h2 {
+  font-family: 'Orbitron', sans-serif;
+  font-size: 48px;
+  font-weight: var(--font-weight-bold);
+  text-transform: uppercase;
+  letter-spacing: 5px;
+  color: var(--accent-color);
+  text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
+  margin-bottom: var(--spacing-small);
+  opacity: 0;
+  transform: translateY(20px);
+  animation: fadeInTitle 0.8s ease-in-out forwards;
+}
+
+#testimonials .section-title p {
+  color: var(--border-color);
+  opacity: 0;
+  transform: translateY(20px);
+  animation: fadeInText 0.8s ease-in-out 0.3s forwards;
+}
+
+/* Keyframes for Animations */
+@keyframes fadeInTitle {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeInText {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Decorative Lines for Section Title */
+#testimonials .section-title h2::before,
+#testimonials .section-title h2::after {
+  content: '';
+  position: absolute;
+  width: 50px;
+  height: 4px;
+  background: var(--accent-color);
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+#testimonials .section-title h2::before {
+  left: 0;
+  right: 100%;
+  margin-right: auto;
+}
+
+#testimonials .section-title h2::after {
+  left: 100%;
+  right: 0;
+  margin-left: auto;
+
+
+
+
+
+
+
+
+
+
+
+
+body {
+  color: var(--secondary-color); /* Updated from --default-color */
+  background-color: transparent;
+  font-family: var(--font-primary); /* Updated from --default-font */
+}
+
+a {
+  color: var(--accent-color);
+  text-decoration: none;
+  transition: var(--transition-duration); /* Use transition duration variable */
+}
+
+a:hover {
+  color: rgba(102, 252, 241, 0.75); /* Adjusted hover color */
+  text-decoration: none;
+}
